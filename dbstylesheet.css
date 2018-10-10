@@ -1,0 +1,677 @@
+@font-face 
+{
+    font-family: 'aaarghnormal';
+    src: url('fonts/aaargh_normal_macroman/Aaargh-webfont.eot');
+    src: url('fonts/aaargh_normal_macroman/Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aaargh_normal_macroman/Aaargh-webfont.woff2') format('woff2'),
+         url('fonts/aaargh_normal_macroman/Aaargh-webfont.woff') format('woff'),
+         url('fonts/aaargh_normal_macroman/Aaargh-webfont.ttf') format('truetype'),
+         url('fonts/aaargh_normal_macroman/Aaargh-webfont.svg#aaarghnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'little_trouble_girl_bvregular';
+    src: url('fonts/littletroublegirlbv_regular_macroman/littletroublegirl-webfont.eot');
+    src: url('fonts/littletroublegirlbv_regular_macroman/littletroublegirl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/littletroublegirlbv_regular_macroman/littletroublegirl-webfont.woff2') format('woff2'),
+         url('fonts/littletroublegirlbv_regular_macroman/littletroublegirl-webfont.woff') format('woff'),
+         url('fonts/littletroublegirlbv_regular_macroman/littletroublegirl-webfont.ttf') format('truetype'),
+         url('fonts/littletroublegirlbv_regular_macroman/littletroublegirl-webfont.svg#little_trouble_girl_bvregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*
+{
+	font-family: 'aaarghnormal', arial, sans-serif ;
+	color: white;
+}
+
+html 
+{
+
+  background-image: url('images/fond3.png');
+  background-size: 100%;
+}
+
+body
+{
+	 height: 100%;
+	 width: 85%;
+	 margin : auto;
+	 
+}
+
+section
+{
+	height: 90%;
+	margin: auto;
+	margin-top: 13em;
+	margin-bottom: 20px;
+	vertical-align: middle;
+}
+
+/*-------------------------FOOTER----------------------*/
+
+footer
+{
+	text-align: right;
+	width: 85%;
+	height: 30%;
+	font-size: 0.7em;
+	color: #78FA48 ;
+	margin: auto;
+	vertical-align: bottom;
+	margin-bottom: 20px;
+}
+
+/*---------------------HEADER INDEX-------------------*/
+
+#bloc_page
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	
+}
+
+header
+{
+	display: flex;
+	justify-content: space-around;
+	height: 30%;
+	width: 85%;
+	margin: auto;
+	align-items: center;
+	position: fixed;
+    background-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%);
+}
+
+h6
+{
+	display: none;
+}
+h1
+{
+	color: #78FA48;
+	font-style: bold;
+	font-size: 3.5em;
+	width: 100%;
+	text-shadow: 1em 1em 1em 1em grey;
+}
+
+.logo
+{
+	display : none;
+	width: 70%;
+	height: auto;
+}
+
+.index_nav
+{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+
+}
+
+.menu_nav
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+
+}
+
+.menu_lien
+{
+	display: flex;
+	justify-content: center;
+	border-radius: 100%;
+	width: 6em;
+	height: 6em;
+	text-align : center;
+	align-items: center;
+	color: white;
+	text-decoration: none;
+	border-style: 1em solid;
+	background-color: black;
+	box-shadow: 0.4em 0.4em 0.6em #78FA48;
+
+}
+
+.menu_lien:hover
+{
+	font-weight: bold;
+	color: #78FA48;
+	text-shadow: 0.1em 0.1em 0.1em grey;
+	box-shadow: 0em 0em 0.6em #78FA48;
+
+}
+
+/*---------------SECTION INDEX-----------------*/
+
+#index_section
+{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	vertical-align : border-bottom;
+	height: 70%;
+
+}
+
+#index_intro
+{
+	width: 20em;
+	height: 20em;
+	text-align: justify;
+	background-color: #78FA48;
+	padding: 1.5em 1.5em 1.5em 1.5em;
+	border-radius: 1em;
+	align-items: baseline;
+	margin-top: 12%;
+}
+.presentation
+{
+	color: black;
+	font-style: bold;
+	font-size: 1.1em;
+	margin: auto;
+}
+#index_mur_images
+{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	border-radius: 1em;
+	margin-top: 30%;
+
+}
+.index_img_intro_isolee {
+	width: 10em;
+	height: 10em;
+	border-radius: 1em;
+	margin-top: 120%;
+}
+.index_img_intro {
+	width: 10em;
+	height: 10em;
+	border-radius: 1em;
+	margin-top: 30%;
+}
+
+
+@keyframes vol_abeille {
+    0% {
+        transform: translateX(0px) translateZ(-200px) (0px) scale(0.5);
+    }
+    5% {
+        transform: translateY(10px) rotate(10deg);
+    }
+    10% {
+        transform: translateX(100px) translateZ(-100px)rotate(10deg);
+    }
+    20% {
+        transform: translateX(200px) rotate(5deg);
+    }
+    30% {
+        transform: translateX(300px) translateZ(0px) rotate(10deg);
+    }
+    40% {
+        transform: translateX(400px) rotate(15deg);
+    }
+    50% {
+        transform: translateX(500px) translateZ(100px) rotate(10deg);
+    }
+    60% {
+        transform: translateX(600px) rotate(15deg);
+    }
+    70% {
+        transform: translateX(700px) rotate(10deg);
+    }
+    80% {
+        transform: translateX(800px) rotate(5deg);
+    }
+    100% {
+        transform: translateX(880px) rotate(10deg);
+    }
+}
+
+.anim_abeille
+{
+    margin: 10px;
+    width: 20px;
+    height: 80px;
+}
+.anim_abeille:hover
+{
+    animation: vol_abeille 3s; 
+    animation-direction : alternate;
+   
+    perspective: 800px;
+}
+/*----------------------DIVERS-------------------*/
+.en_dev
+{
+	width: 70%;
+	height: auto;
+	border-radius: 1em;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.portfolio_menu
+{
+	display: none;
+}
+/*-----------------SECTION CV-------------------*/
+
+.niveau /*barre de niveau des tableaux*/
+{
+
+	background-image: linear-gradient(to top, black 1%,#78FA48 99%);
+	border-radius: 1em;
+	color: black;
+	text-align: left;
+	padding-left: 0.5em;
+	font-style: bold;
+}
+
+h2
+{
+	font-family: 'little_trouble_girl_bvregular','aaarghnormal', arial, sans-serif ;
+	font-size: 2em;
+	padding-left: 1em;
+	text-shadow: 0.1em 0.1em 0.5em #78FA48;
+}
+
+#cvbox1
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	vertical-align: baseline;
+	align-items: center;
+}
+
+.portrait
+{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	text-align: center;
+}
+
+.boite_bouton_experiences
+{
+	width: 75%;
+	height: auto;
+	text-align: center;
+	border-radius: 1em;
+	border-color: 2em solid #78FA48;
+	background-color: black;
+	color: white;
+	text-shadow: 0.1em 0.1em 0.1em grey;
+	box-shadow: 0em 0em 0.6em #78FA48;
+	padding: 1em 1em 1em 1em;
+	margin-left: 0.3em;
+	
+}
+.bouton_experiences
+{
+	text-decoration: none;
+}
+.boite_bouton_experiences:hover
+{
+	background-color: #78FA48;
+	color: black;
+	font-style: bold;
+}
+
+#cvboxtab
+{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	margin-right: 3em;
+	padding-left: 3em;
+	border-left: 0.3em dotted darkgrey;
+}
+
+#cvbox2
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: auto;
+	width: 100%;
+}
+#boxqualites
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.cv_qualites
+{
+	width: 100%;
+	height: auto;
+	align-items: center;
+
+}
+
+#boxhobbies
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	border-radius: 100%;
+	width: 30em;
+	height: 30em;
+	border-style: 1em ditted;
+	box-shadow: 0.1em 0.1em 0.1em #78FA48;
+}
+.cv_img_hobby
+{
+	width: 27em;
+	height: 17em;
+	border-radius: 36%;	
+}
+
+.cv_ligne_im
+{
+	display: block;
+}
+
+.cv_illus_tab
+{
+	justify-content: center;
+	width: 1.5em;
+	height: auto;	
+}
+
+
+
+/*-----------------SECTION EXPERIENCE-------------------*/
+
+.img_timeline
+{
+	width: 3em;
+	height: auto;
+	float: left;
+	padding-right: 0.5em;
+	align-items: top;
+}
+
+#timeline {
+  width: 95%;
+  margin: auto;
+  position: relative;
+  margin-top: 2em;
+  z-index: -10;
+}
+#timeline:before  /*ligne verticale*/ {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin: 0 0 0 -1px;
+  width: 2px;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+}
+#timeline article /* ligne largeur 100% article*/ {
+  width: 100%;
+  margin: 0 0 20px 0;
+  position: relative;
+
+
+}
+#timeline article:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#timeline article div.inner span.date /*cercle date*/ {
+  display: block;
+  width: 60px;
+  height: 50px;
+  padding: 5px 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -32px;
+  border-radius: 100%;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background-image: radial-gradient(circle at center,#78FA48 1%,black);
+  color: rgba(255,255,255,0.5);
+  border: 2px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 0.4em 0.4em #78FA48;
+
+}
+#timeline article div.inner span.date span  /*boite date */{
+  display: block;
+  text-align: center;
+
+}
+
+#timeline article div.inner span.date span.year {
+  font-size: 2em;
+}
+#timeline article div.inner span.date span.month {
+  font-size: 1em;
+}
+#timeline article div.inner h3  /* fond article titre text*/ {
+  padding: 15px;
+  margin: 0;
+  color: #fff;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  border-radius: 6px 6px 0 0;
+  position: relative;
+}
+#timeline article div.inner /* fond article titre*/{
+  width: 40%;
+  float: left;
+  margin: 5px 0 0 0;
+  border-radius: 6px;
+
+}
+#timeline article div.inner h3:after  /* petite fleche */ {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: -5px;
+  	width: 10px; 
+	  height: 10px;
+  -webkit-transform: rotate(-45deg);
+}
+.inner_regie
+{
+	background-color: #35ab71;
+}
+#timeline article div.inner p {
+  padding: 15px;
+  margin: 0;
+  font-size: 0.9em;
+  background: #fff; /*blanc*/
+  color: #656565;
+  border-radius: 0 0 6px 6px;
+}
+/*-----
+2018 web bleu #0095b3
+2011 bfm #648c98
+vert régie film  #35AB71 video #35AB36 ass #6FAB35
+vert usa #7fb322
+diplome orange #feaa26
+naissance rouge #e74634
+---------*/
+#timeline article:nth-child(2n+2) div.inner {
+  float: right;
+}
+#timeline article:nth-child(2n+2) div.inner h3:after {
+  left: -5px;
+}
+#timeline article:nth-child(1) div.inner h3 {
+  background: #e74c3c;
+}
+#timeline article:nth-child(1) div.inner h3:after {
+  background: #e74c3c;
+}
+#timeline article:nth-child(2) div.inner h3 {
+  background: #0095b3;
+}
+#timeline article:nth-child(2) div.inner h3:after {
+  background: #0095b3;
+}
+#timeline article:nth-child(3) div.inner h3 {
+  background: #35AAAB;
+}
+#timeline article:nth-child(3) div.inner h3:after {
+  background: #35AAAB;
+}
+#timeline article:nth-child(4) div.inner h3 {
+  background: #6FAB35 /* ASSIS PROD*/;
+}
+#timeline article:nth-child(4) div.inner h3:after {
+  background: #6FAB35;
+}
+#timeline article:nth-child(5) div.inner h3 {
+  background: #35AB36 /*VIDEO*/;
+}
+#timeline article:nth-child(5) div.inner h3:after {
+  background: #35AB36;
+}
+#timeline article:nth-child(6) div.inner h3 {
+  background: #35AB71 /*FILM*/;
+}
+#timeline article:nth-child(6) div.inner h3:after {
+  background: #35AB71;
+}
+#timeline article:nth-child(7) div.inner h3 {
+  background: #35AB71 /*FILM*/;
+}
+#timeline article:nth-child(7) div.inner h3:after {
+  background: #35AB71;
+}
+#timeline article:nth-child(8) div.inner h3 {
+  background: #35AB36 /*VIDEO*/;
+}
+#timeline article:nth-child(8) div.inner h3:after {
+  background: #35AB36;
+}
+#timeline article:nth-child(9) div.inner h3 {
+  background: #35AB71 /*FILM*/;
+}
+#timeline article:nth-child(9) div.inner h3:after {
+  background: #35AB71;
+}
+#timeline article:nth-child(10) div.inner h3 {
+  background: #35AB71 /*FILM*/;
+}
+#timeline article:nth-child(10) div.inner h3:after {
+  background: #35AB71;
+}
+#timeline article:nth-child(11) div.inner h3 {
+  background: #35AB36 /*VIDEO*/;
+}
+#timeline article:nth-child(11) div.inner h3:after {
+  background: #35AB36;
+}
+#timeline article:nth-child(12) div.inner h3 {
+  background: #35AB36 /*VIDEO*/;
+}
+#timeline article:nth-child(12) div.inner h3:after {
+  background: #35AB36;
+}
+#timeline article:nth-child(13) div.inner h3 {
+  background: #35AB71 /*FILM*/;
+}
+#timeline article:nth-child(13) div.inner h3:after {
+  background: #35AB71;
+}
+#timeline article:nth-child(14) div.inner h3 {
+  background: #35AB71 /*FILM*/;
+}
+#timeline article:nth-child(14) div.inner h3:after {
+  background: #35AB71;
+}
+#timeline article:nth-child(15) div.inner h3 {
+  background: #35AB71 /*FILM*/;
+}
+#timeline article:nth-child(15) div.inner h3:after {
+  background: #35AB71;
+}
+#timeline article:nth-child(16) div.inner h3 {
+  background: #35AB36 /*VIDEO*/;
+}
+#timeline article:nth-child(16) div.inner h3:after {
+  background: #35AB36;
+}
+#timeline article:nth-child(17) div.inner h3 {
+  background: #7fb322 /*VIDEO*/;
+}
+#timeline article:nth-child(17) div.inner h3:after {
+  background: #7fb322;
+}
+#timeline article:nth-child(18) div.inner h3 {
+  background: #7fb322 /*VIDEO*/;
+}
+#timeline article:nth-child(18) div.inner h3:after {
+  background: #7fb322;
+}
+#timeline article:nth-child(19) div.inner h3 {
+  background: #feaa26 /*diplome*/;
+}
+#timeline article:nth-child(19) div.inner h3:after {
+  background: #feaa26;
+}
+#timeline article:nth-child(20) div.inner h3 {
+  background: #feaa26 /*diplome*/;
+}
+#timeline article:nth-child(20) div.inner h3:after {
+  background: #feaa26;
+}
+#timeline article:nth-child(21) div.inner h3 {
+  background: #e74634 /*naissance*/;
+}
+#timeline article:nth-child(21) div.inner h3:after {
+  background: #e74634;
+}
+/*-----
+2018 web bleu #0095b3
+2011 bfm #648c98
+vert régie film  #35AB71 video #35AB36 ass #6FAB35
+vert usa #7fb322
+diplome orange #feaa26
+naissance rouge #e74634
+---------*/
+
+/*-----------------SECTION CONTACT-------------------*/
+
+iframe
+{
+	border-radius: 1em;
+	width: 690px;
+	height: 1300px;
+	margin-left: 20%;
+	margin-right: 20%; 
+}
